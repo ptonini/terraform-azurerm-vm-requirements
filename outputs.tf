@@ -1,5 +1,5 @@
 output "availability_set_id" {
-  value = one(azurerm_availability_set[*].this.id)
+  value = one(azurerm_availability_set.this[*].id)
 }
 
 output "network_interface_ids" {
